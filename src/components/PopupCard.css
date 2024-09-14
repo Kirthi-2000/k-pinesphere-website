@@ -1,0 +1,140 @@
+/* Same as the original CSS you provided */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+  color: #282828;
+  transition: 0.2s;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.back-link {
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+.back-link:hover, .back-link:focus {
+  color: #0e0d0d;
+  border-color: #fff;
+}
+
+.article__pointer {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  margin: -50px 0 0 -50px;
+  display: flex;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+
+.article__pointer_blue {
+  top: 30%;
+  left: 30%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1470104240373-bc1812eddc9f?dpr=1&auto=format&crop=entropy&fit=crop&w=100&h=100&q=80&cs=tinysrgb");
+  box-shadow: 0 0 0 10px #2980b9;
+}
+.article__pointer_blue:hover, .article__pointer_blue:focus {
+  box-shadow: 0 0 0 20px #2980b9;
+}
+
+.article__pointer_red {
+  top: 50%;
+  left: 60%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1448317971280-6c74e016e49c?dpr=1&auto=format&crop=entropy&fit=crop&w=100&h=100&q=80&cs=tinysrgb");
+  box-shadow: 0 0 0 10px #e74c3c;
+}
+.article__pointer_red:hover, .article__pointer_red:focus {
+  box-shadow: 0 0 0 20px #e74c3c;
+}
+
+.article__pointer_yellow {
+  top: 70%;
+  left: 40%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1470897655254-05feb2d2ab97?dpr=1&auto=format&crop=entropy&fit=crop&w=100&h=100&q=80&cs=tinysrgb");
+  box-shadow: 0 0 0 10px #e67e22;
+}
+.article__pointer_yellow:hover, .article__pointer_yellow:focus {
+  box-shadow: 0 0 0 20px #e67e22;
+}
+
+.article__pointer_green {
+  top: 90%;
+  left: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1470104240373-bc1812eddc9f?dpr=1&auto=format&crop=entropy&fit=crop&w=100&h=100&q=80&cs=tinysrgb");
+  box-shadow: 0 0 0 10px #29b946;
+}
+.article__pointer_green:hover, .article__pointer_green:focus {
+  box-shadow: 0 0 0 20px #29b946;
+}
+
+/* Add your existing CSS styles for .article__panel, .article__pointer, etc. */
+
+.article__panel {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95);
+  transition: opacity 0.2s, transform 0.2s ease-in-out;
+}
+
+.article__panel.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.article__pointer {
+  cursor: pointer;
+}
+
+/* Rest of the styles */
+
+.article__panel:target {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.article__body {
+  max-height: 100%;
+  width: 100%;
+  flex: 0 0 100%;
+  padding: 40px 20px;
+  line-height: 1.6;
+  color: rgba(21, 19, 19, 0.75);
+}
+
+.section-six {
+  background-color: #ffffffd6 !important;
+  z-index: 10; 
+}
+.button{
+    color:black;
+}

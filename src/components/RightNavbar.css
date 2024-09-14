@@ -1,0 +1,25 @@
+
+  
+  .right-navbar.expanded {
+    width: 600px;
+  }
+  
+  .right-navbar ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+  }
+  
+  .right-navbar.expanded ul {
+    display: block;
+  }
+  
+  .right-navbar ul li {
+    margin: 20px 0;
+  }
+  
+  .right-navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }

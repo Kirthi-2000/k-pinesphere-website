@@ -1,0 +1,91 @@
+.culture-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height for full-page layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    overflow: hidden; /* To avoid any overflowing images */
+  }
+  
+  .center-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .text-content h1 {
+    font-size: 4rem; /* Make the text bigger */
+    font-weight: bold; /* Bold text */
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* You can replace this with any font-family */
+    color: #2c3e50; /* Darker text color for emphasis */
+    text-transform: uppercase; /* Optional for all-caps styling */
+  }
+  
+  .text-content .highlight {
+    background-color: #c7ffc3;
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif; /* Different style for the highlight part */
+  }
+  
+  .intrigue-button {
+    padding: 15px 30px; /* Increased button size */
+    background-color: #b4ff66;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Make button text bigger */
+    font-family: 'Poppins', sans-serif; /* Match button font to the header */
+    font-weight: bold;
+    text-transform: uppercase; /* Button text in all caps */
+    transition: background-color 0.3s ease;
+  }
+  
+  .intrigue-button:hover {
+    background-color: #99e64d; /* Change color on hover */
+  }
+  
+  /* Base styles for images */
+  .image {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Image hover effect */
+  .image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Positioning images at different parts of the page, scattered evenly */
+  .image-pos-1 {
+    top: 5%;
+    left: 10%;
+  }
+  
+  .image-pos-2 {
+    top: 10%;
+    right: 15%;
+  }
+  
+  .image-pos-3 {
+    bottom: 15%;
+    left: 5%;
+  }
+  
+  .image-pos-4 {
+    bottom: 10%;
+    right: 20%;
+  }
+  
+  /* Adding more spacing between images */
+  .culture-section .image {
+    margin: 40px; /* Adjust as needed for spacing between images */
+  }
+  
